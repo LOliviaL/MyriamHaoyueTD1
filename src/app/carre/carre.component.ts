@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 
+
 @Component({
   selector: 'app-carre',
   templateUrl: './carre.component.html',
@@ -12,6 +13,5 @@ export class CarreComponent {
   public addColorEvent(value: string){
     this.colorEvent.emit(value);
   }
-
 
 }

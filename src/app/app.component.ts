@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyriamHaoyueTP1';
+
   allColor : string[] = ['red', 'green', 'blue', 'yellow'];
   color : string  = '';
 
