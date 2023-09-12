@@ -2,8 +2,8 @@
   <table>
     <tbody>
     <tr>
-      <ng-container *ngFor="let item of colorChange ; let i = index">
-      <td *ngIf="i == 0 || i ==1 "> <button (click)="addColorEvent(item)" [ngClass]="item"></button></td>
+      <ng-container *ngFor="let item of colorChange.slice(0,2)">
+      <td> <button (click)="addColorEvent(item)" [ngClass]="item"></button></td>
       </ng-container>
     </tr>
     <tr>
