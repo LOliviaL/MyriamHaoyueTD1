@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyriamHaoyueTP1';
+  color : string | undefined;
+
+  public addItem(newItem : string){
+     this.color = newItem;
+  }
 }
