@@ -3,10 +3,12 @@
   height:85vh;
   padding-top:10vh;
   padding-left: 38vw;
-
+  display: block;
 }
 table {
   width: 10em;
+  border: 1px solid black;
+  margin-top: 10%;
 }
 button{
   width: 195px ;

@@ -1,13 +1,18 @@
-
-<div >
 <div class ='container' >
   <table>
     <tbody>
     <tr>
-      <td *ngFor="let item of colorChange"> <button (click)="addColorEvent(item)" [ngClass]="item"></button></td>
+      <ng-container *ngFor="let item of colorChange ; let i = index">
+      <td *ngIf="i == 0 || i ==1 "> <button (click)="addColorEvent(item)" [ngClass]="item"></button></td>
+      </ng-container>
+    </tr>
+    <tr>
+      <ng-container *ngFor="let item of colorChange ; let i = index">
+        <td *ngIf="i == 2 || i ==3 "> <button (click)="addColorEvent(item)" [ngClass]="item"></button></td>
+      </ng-container>
     </tr>
     </tbody>
   </table>
 </div>
-</div>
+
 
