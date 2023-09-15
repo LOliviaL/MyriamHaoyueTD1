@@ -11,6 +11,7 @@ export class CarreComponent {
   @Input() colorChange : string[] = [];
 
   public addColorEvent(value: string){
+    console.log(value);
     this.colorEvent.emit(value);
   }
 
