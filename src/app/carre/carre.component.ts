@@ -8,10 +8,9 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class CarreComponent {
   @Output() colorEvent = new EventEmitter<string>();
-  @Input() colorChange : string[] = [];
+  @Input() colorList : string[] = [];
 
   public addColorEvent(value: string){
-    console.log(value);
     this.colorEvent.emit(value);
   }
 

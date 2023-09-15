@@ -1,18 +1,6 @@
-<div class ='container' >
-  <table>
-    <tbody>
-    <tr> <!-- Méthode 1 de l'utilisation de *ngFor -->
-      <ng-container *ngFor="let item of colorChange.slice(0,2)">
-      <td> <button (click)="addColorEvent(item)" [ngClass]="item"></button></td>
-      </ng-container>
-    </tr>
-    <tr><!-- Méthode 2 de l'utilisation de *ngFor avec *ngIf -->
-      <ng-container *ngFor="let item of colorChange ; let i = index">
-        <td *ngIf="i == 2 || i ==3 "> <button (click)="addColorEvent(item)" [ngClass]="item"></button></td>
-      </ng-container>
-    </tr>
-    </tbody>
-  </table>
-</div>
-
+<nav class ='container' >
+  <div class="carre">
+    <div *ngFor="let item of colorList"> <button (click)="addColorEvent(item)" [ngClass]="item" class="bouton"></button></div>
+  </div>
+</nav>
 

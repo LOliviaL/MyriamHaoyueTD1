@@ -1,6 +1,6 @@
-<div [ngClass]="color">
+<div [ngClass]="colorShow">
 <app-header></app-header>
-<app-carre (colorEvent)="addItem($event)" [colorChange]=allColor></app-carre>
+<app-carre (colorEvent)="addItem($event)" [colorList]=allColor></app-carre>
 <app-footer></app-footer>
 </div>
 
